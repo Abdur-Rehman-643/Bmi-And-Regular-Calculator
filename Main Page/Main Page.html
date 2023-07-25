@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f2f2f2;
+        }
+    
+        .container {
+          max-width: 400px;
+          margin: 0 auto;
+          padding: 20px;
+          text-align: center;
+        }
+    
+        h1 {
+          color: #007bff;
+          margin-bottom: 30px;
+        }
+    
+        .calculator-btn, .bmi-calculator-btn {
+          padding: 15px 30px;
+          font-size: 18px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin: 10px;
+          transition: background-color 0.2s ease;
+          text-decoration: none; /* Remove underline from links inside buttons */
+        }
+    
+        .calculator-btn:hover, .bmi-calculator-btn:hover {
+          background-color: #0056b3;
+        }
+    
+        /* If you want the buttons to have the same width */
+        .calculator-btn, .bmi-calculator-btn {
+          width: 150px;
+        }
+    
+        /* Center the text inside buttons */
+        .calculator-btn, .bmi-calculator-btn {
+          display: inline-block;
+          text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MAIN PAGE</h1>
+        <button class="calculator-btn" style="width: 150px; padding: 12px;">
+          <a href="/calculator" style="text-decoration: none; color: white;">Calculator</a>
+        </button>
+        <button class="bmi-calculator-btn" style="width: 150px; padding: 12px;">
+          <a href="/bmicalculator" style="text-decoration: none; color: white;">Bmi Calculator</a>
+        </button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+      /* Body styles */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+    
+      /* Calculator container styles */
+      .calculator-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+      }
+    
+      h1 {
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+    
+      /* Input field styles */
+      .input-field {
+        width: 95%;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: border-color 0.2s ease;
+      }
+    
+      .input-field:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    
+      /* Select styles */
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: #fff;
+        transition: border-color 0.2s ease;
+      }
+    
+      select:focus {
+        border-color: #007bff;
+        outline: none;
+      }
+    
+      /* Operation button styles */
+      .operation-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        transition: background-color 0.2s ease;
+      }
+    
+      .operation-btn:hover {
+        background-color: #0056b3;
+      }
+    
+      /* Go back button container styles */
+      .go-back-container {
+        text-align: center;
+        margin-top: 5%;
+      }
+    
+      /* Go back button styles */
+      .go-back-btn {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007bff;
+        transition: background-color 0.2s ease;
+        text-decoration: none;
+      }
+    
+      .go-back-btn:hover {
+        background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+    <form action="/calculator" method="post">
+        <div class="calculator-container">
+          <h1>CALCULATOR</h1>
+          <input type="text" class="input-field" id="num1" name="num1"  placeholder="Enter number 1">
+          <input type="text" class="input-field" id="num2" name="num2" placeholder="Enter number 2">
+          <select name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+          <button type="submit" class="operation-btn" style="background-color: green;" name="calculate">Calculate</button>
+        </div>
+        <div style="text-align: center; margin-top: 5%;">
+            <button style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+              <a href="/" style="text-decoration: none; color: #fff;">GO BACK TO THE MAIN PAGE</a>
+            </button>
+          </div>
+    </form>
+</body>
+</html>
